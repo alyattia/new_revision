@@ -1,0 +1,7 @@
+- npm init // create package.json
+- npm i express --save // install express
+- node (the name of the server file) // run the server
+- node --watch (the name of hte server) // auto watch the server
+- npm run dev // a script added in the package.json file
+
+

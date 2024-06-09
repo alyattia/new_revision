@@ -1,0 +1,58 @@
+@import 'config';
+@import 'utils';
+@import 'btns';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $light-color;
+  font-family: $font-stack;
+  line-height: 1.6; 
+}
+
+.showcase {
+  @include set-bg-text($prim-color);
+  height: 80vh;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    li {
+      padding: 15px;
+      a {
+        text-decoration: none;
+      }
+    }
+
+    a:hover {
+      color: $sec-color;
+    }
+  }
+
+  // the add sine here is basically ".showcase"
+  &-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 50%;
+    }
+  }
+}
+
+
+// importing media queries at the buttom
+@import 'mobile'

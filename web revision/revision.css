@@ -1,0 +1,29 @@
+/* 
+px => px 3ady
+em => times the parent e.g. if the parent has size of 20px then when you make the child 2em it
+will have size of 40px
+rem => times the root 
+% => percentage the parent
+vw => view port width, how much from the width of the screen
+vh => view port height
+*/
+
+h1 {
+  /* if the browser doen't support the first font it will take the second and so on */
+  font-family: 'Press Start 2p', "consolas", sans-serif;
+}
+p.wavy {
+  font-family: "consolas", sans-serif;
+  text-decoration: wavy;
+  border-style: dashed;
+  border-width: 2px;
+  border-color: gold;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+body {
+  background: linear-gradient(skyblue, lightgreen);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

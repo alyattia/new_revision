@@ -1,0 +1,40 @@
+// the _ in the file's name tells sass to not compile that to css
+$font-stack: Arial, Helvetica, sans-serif;
+$light-color: #f4f4f4;
+$prim-color: #0e6cff;
+$sec-color: #ff8700;
+
+// Set text color based on BG
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+// set the text and bg color
+@mixin set-bg-text($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
+
+// Margin and padding classes
+$space-amounts: (1,2,3,4,5);
+@each $space in $space-amounts {
+  .m-#{$space} {
+    margin: #{$space}rem; // rem size units
+  }
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+  .mx-#{$space} {
+    margin: 0 #{$space}rem;
+  }
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+};

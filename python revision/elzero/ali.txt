@@ -1,0 +1,4 @@
+ali = 10
+mohamed = 19
+eyad = 7
+obad = 8

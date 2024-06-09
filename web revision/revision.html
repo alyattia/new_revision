@@ -1,0 +1,55 @@
+<!-- tell browser that's html5 doc -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>revision</title>
+  <link rel="stylesheet" href="revision.css">
+  <style>
+    #google_a {
+      color: red;
+      font-size: 30pt;
+    }
+    h1 {
+      border: 1px solid blue;
+      margin-bottom: 20px;
+    }
+    img.profile-img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      float: right;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hello</h1>
+    <p class="wavy">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius </p>
+    <div class="img-class" id="img_id" >
+      <img class="profile-img" src="ali.jfif" alt="ali pic" height="100px" width="100px" >
+      <p>@ali_zaghloul</p>
+      <a id="google_a" target="_blank" href="google.com">go to google</a>
+    </div>
+  </header>
+  <main>
+    <ul>
+      <li>ali</li>
+      <li>obad</li>
+    </ul>
+    <ol>
+      <li>mama</li>
+      <li>eyad</li>
+    </ol>
+  </main>
+  <div class="sign-in">
+    <form method="GET" action="/sign-in">
+      <input type="email" placeholder="Your email" required>
+      <label for="agree-inp"><input type="radio" name="agree" id="agree-inp">agree</label>
+      <label for="loving"><input type="checkbox" id="loving" checked>in love</label>
+      <button type="submit">submit</button>
+    </form>
+  </div>
+</body>
+</html>
